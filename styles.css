@@ -1,0 +1,237 @@
+:root{
+    --bd: #406882;
+    --fg: #30475E;
+    --buttn: #F05454;
+    --head: #19282F;
+}
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+section article {
+    display: inline-block;
+}
+.header {
+    min-height: 100mh;
+    width: 100%;
+    background: var(--head);
+    color: var(--fg);
+    position: relative;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+.logo {
+    text-decoration: none;
+    color: #fff;
+    font-size: 30px;
+    font-weight: bold;
+    padding-top: 10px;
+    padding-left: 10%;
+}
+.nav-links {
+    text-align: right;
+    background: var(--buttn);
+    padding: 10px 30px;
+    border-bottom-left-radius: 18px;
+}
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 10px 25px;
+}
+.nav-links ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+.left-sidebar {
+    width: 20%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: var(--buttn);
+
+}
+.row {
+    padding: 0 10%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    position: relative;
+    margin-top: 5%;
+}
+.left-col {
+    flex-basis: 40%;
+}
+.left-col img {
+    width: 55%;
+    border-radius: 50%;
+    cursor: pointer;
+    filter: grayscale(0);
+    transition: filter 1s;
+    padding-bottom: 15px;
+}
+.left-col img:hover {
+    filter: grayscale(1);
+}
+.right-col {
+    flex-basis: 55%;
+}
+.right-col h1 {
+    font-size: 55px;
+    font-weight: 600;
+    color: #fff;
+}
+.right-col p {
+    color: #777;
+    margin: 20px 0 70px;
+}
+body {
+    background: #7C99AC;
+}
+.sessao1 {
+    float: left;
+    padding: 0 30px;
+    padding-top: 10px;
+}
+.sessao2 {
+    padding: 0 30px;
+    padding-top: 10px;
+}
+.sessao2 p {
+    padding-top: 10px;
+}
+.formacao {
+    display: inline-block;
+    width: 25%;
+    padding: 20px 10px;
+    margin: 2%;
+    text-align: center;
+    background: var(--fg);
+    color: #fff; 
+}
+.formacao small {
+    padding-top: 10px;
+}
+.projetos {
+    padding: 15px 30px;
+
+}
+.contato {
+    padding: 15px 30px;
+
+}
+aside {
+    transition: all 3s, transform 2s;
+    position: absolute;
+    float: left;
+    height: 320px;
+    width: 400px;
+    background: #D1D1D1;   
+}
+.hideAside {
+    left:  -390px;
+}
+.asideShow {
+    transform: translate(390px, 0px);
+    display:inline-block;
+}
+.form-box {
+    margin-top: 30px;
+}
+.form-box h3 {
+    text-align: center;
+    padding-bottom: 10px;
+}
+.input-box input {
+    width: 45%;
+    border: 0;
+    outline: none !important;
+    padding: 10px;
+    margin: 2%;
+    display: inline-block;
+    background: #fff;
+}
+.text-area textarea {
+    width: 95%;
+    border: 0;
+    outline: none !important;
+    padding: 10px;
+    margin: 2%;
+    background: #fff;
+}
+.submit-bt {
+    border: 0;
+    outline: none !important;
+    padding: 10px 20px;
+    margin: 2%;
+    background: #2ab0ff;
+    cursor: pointer;
+    color: #fff;
+}
+.contato button {
+    border: 0;
+    outline: none !important;
+    padding: 10px 10px;
+    margin: 2%;
+    background: var(--fg);
+    cursor: pointer;
+    color: #fff; 
+}
+footer {
+    background-color: var(--buttn);
+}
+
+.social-media {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.icon {
+    width: 60px;
+    height: 60px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    border-radius: 6px;
+    overflow: hidden;
+}
+.icon img {
+    width: 60px;
+}
+.icon a {
+    width: 60px;
+    height: 60px;
+    background: var(--fg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+}
+.icon a:hover {
+    opacity: 1;
+}
+.align-test {
+    padding-top: 20px;
+}
+.align-test section {
+    position: relative;
+    color: white;
+  padding-bottom: 15px;
+  font-size: 0.75rem
+}
